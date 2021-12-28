@@ -1,0 +1,38 @@
+body
+{
+    
+    background-image: url('figures\new.jpeg');
+    background-position: center;
+    background-size: cover;
+    
+    width: 600px;
+    margin:auto;
+    padding: 100px;
+}
+.author {
+    text-align: center;
+    }
+
+h1 {
+        text-align: center;
+    }
+.section h2::before
+{
+    content:"سوالات فصل "
+}    
+h2 {
+    text-align: center;
+}
+.fa{ direction:rtl}
+
+div.en{
+    display:inline;
+}
+div.footer::before
+{
+content:"(" ;
+}
+div.footer::after
+{
+content:")" ;
+}
