@@ -1,0 +1,19 @@
+
+.outline
+{
+    padding-left:20px;
+    counter-reset: topic;    
+}
+
+.outline .topic::before
+{
+  counter-increment: topic;                   /* Increment the value of section counter by 1 */
+  content:  counter(topic) "- "; 
+}    
+
+
+.topic .description
+  {
+      padding-left:30px;
+      padding-bottom:5px;
+  }

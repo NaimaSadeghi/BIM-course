@@ -1,0 +1,21 @@
+
+.project_list
+{
+    padding-left:20px;
+    counter-reset: project;    
+}
+
+.project .topic::before
+{
+  counter-increment: project;                   /* Increment the value of section counter by 1 */
+  content: "Project " counter(project) ": "; 
+}    
+.project .topic {
+    font-weight: bold;
+  }
+
+.project .description
+  {
+      padding-left:30px;
+      padding-bottom:5px;
+  }

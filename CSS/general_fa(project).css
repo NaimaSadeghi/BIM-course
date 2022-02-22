@@ -1,0 +1,99 @@
+body
+{
+    position: relative;
+    width: 600px;
+    margin:auto;
+   
+}
+body::after
+{
+ content: ' ';
+ text-align: center;
+ padding-top:20px;
+  width: 100%;
+  height:100px;
+  display: block;
+ 
+  background-image: url("Figures/kntu.png");
+  background-size: 80px 80px;
+  background-repeat:no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.fa
+{
+    direction: rtl;
+}
+.en
+{
+    direction: ltr;
+}
+.code
+{
+    direction: ltr;
+}
+
+
+.content
+{
+    text-align: justify;
+    line-height: 1.5;
+}
+.content::before
+{
+    content:"به نام خدا";
+    text-align:center;
+    width:600px;
+    line-height: 1;
+    margin:auto;
+    position:absolute;
+    
+}
+#instructor {
+    text-align: center;
+    padding-right:150px;
+    padding-left:150px;
+    padding-bottom: 30px;
+    }
+
+#course_title{
+    font-size: 150%;
+    text-align: center;
+    line-height: .5;
+    margin-bottom:10px;
+}
+
+#kntu_logo
+{
+    width: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top:5px;
+}
+.content h1{
+        text-align: center;
+        line-height: 1;
+        padding-top: 100px;
+    }
+
+.project_list
+{
+    padding-left:20px;
+    counter-reset: project;    
+}
+
+.project .topic::before
+{
+  counter-increment: project;                   /* Increment the value of section counter by 1 */
+  content: "Project " counter(project) ": "; 
+}    
+.project .topic {
+    font-weight: bold;
+  }
+
+.project .description
+  {
+      padding-left:30px;
+      padding-bottom:5px;
+  }
